@@ -1,0 +1,16 @@
+# link to blocks: https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=dz1_1_python.drawio#R7VtLc%2BI4EP4te6Bq98AUlt9HCCR7mFSmKrW1k9OWwIrtGdvyyGKA%2BfUrS%2FLbBEIGRAIXI7X1aHXr64dkBvpNvL4jMA3usYeiARh564E%2BHQDgWA575oSNIBgOEASfhJ4gaRXhMfyFJHEkqcvQQ1mjIcU4omHaJC5wkqAFbdAgIXjVbPaMo%2BasKfRRh%2FC4gFGX%2Bm%2Fo0UAuC9gV%2FW8U%2BkExs2a54k0Mi8ZyJVkAPbyqkfTZQL8hGFNRitc3KMplV8jlv9sHk97N4uDBp9%2B%2FrRz4lNwOxWC3r%2BlSLoGghB489N3TZ488ZvfYvnv8Edqbfx7uzSHQ5drophAY8pj8ZBUTGmAfJzCaVdQJwcvEQ%2FmwI1ar2nzGOGVEjRG%2FIUo3cjPAJcWMFNA4km%2FROqRf8%2B6fTFl7qr2ZruXIvLIpKgklm1qnvPpUf1d147Win1hfvqjWftghTNkuw0uyQC9IUG4OComP6AvttHLHMKQhHCPGJOtHUARp%2BLPJHJR73i%2FbVXplBanaV6hZMvkTRks504AJx53mz8lowETv2EWZPSf8OetsjUrxua5WQUjRYwq5eFbMeDSVLKdEhKL1AaLvikqOUlqWTdPQrCp0awVkgxqyrdGRhAuMK4behqHCL%2BzCEFCJIa0fQ%2Fw5EU%2BTPw3%2BdDiqCjoQwNIlsESz9q5hDibNi0yuMIpQhH0CYyb%2BFJGQrQGR9rsv1YtdaHwO16jwzqdFp2p4qkVnDZsVUt8XOsGe6NSVotNUqWbtgtRsqVQz6BphYEWM3UmWwqShf%2BvHMo%2FMJ3O4%2BO5zTQ8XOMLMVo5zdv35n8DkhhkwVkat8l9Vf1by%2BW9u7U1u1bValMTSIwvGubVN5lkq2r%2FM0DNO6PAZxmG0EbyUIwyArhti080JDJMsT0NwgjsNSlbztxk3%2Bh1%2BNwgS3k4sTDDFhC74kms6E16N82fxDz7puXO5i78OuR3hBzieLzN10b3mms34we2JH8ye%2BEHTjhbfW%2B8lvj%2B2i3irh5ddv%2BCQsVOFjHYzZLT0liaFS5K9KmWOCYGbWrM0b5Btn2fLNNXWEANWG6Vc4uF7R%2B9PGkQGoHFnMqml39OCwsru5SQNrZxBV57Sm%2F1qM%2BQZSVsHTBy0KTkYhX7CygsmFi7pXGjhAkZj%2BSIOPU8YCpSFv%2BCcD5VjWO5iNq45GZjTfCxmG7ITKMFsWt7y3LOmBb1HCeBYStC6gr5mbq%2By19aeIb2tNHOz30vmdi7q0pSmYNY1BfuIKRg%2FqDt3JvM5r2nYCdIwXW%2BGZMAxVadhmtqrysPCAYt5t1pAMBx9GlWULVEBr9Wi9JP4HntP3%2BMoDRWUnuUfesjrgkZM%2BN53gKtyB9jX4OOg4MM4d4d5DT6uwce2O2TdVR58AKVJ6kf4xsPZ070AU6V%2Fcbr%2BpfrIw6kZf3EcOy7KJf1CT3DdJmKNvlubk57gFvnL%2BQP22MB7a7zWf5litBLEfS9tftfFitsP1OvFSjONt88Nl8C94vI3neKqvU21jBevU7t8OQquX7Wew%2BqrP9%2FDcJjOuRkObUtoNi2%2BvOVf27Z18SFuZnWzqYy%2Bm1mjRxfHu5nd4n0%2F9P04aH2ZpKu%2BHy8GvkBEmKPRTl2cFBHFui4KEZrdRESZEyhDBLhYROhth92ji9MiYss3VONa7FTXS%2Fcjy7P8t5llHS8QYtXq36QiBK7%2BkqvP%2Fgc%3D
+
+'''
+Определить, является ли год, который ввел пользователем, високосным или невисокосным.
+'''
+
+year = int(input('Введите год: '))
+if year % 4 != 0:
+    print(f'{year} - обычный')
+elif year % 100 == 0:
+    if year % 400 == 0:
+        print(f'{year} - високосный')
+    else:
+        print(f'{year} - обычный')
+else:
+    print(f'{year} - високосный')
