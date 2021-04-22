@@ -1,0 +1,13 @@
+# link to blocks: https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=dz1_1_python.drawio#R7VlLc5swEP41ntoHOjzM6xj8aGeadtLJIc2pI4yCaQFRWY7t%2FvpKSAIRcOPUiekkvsjSavXa1fexKw%2BsSbb9gEGx%2FIwimA5MPdoOrOnAND3HoyUT7Lhg7JlcEOMk4iKjFlwnv6EQ6kK6TiK4aigShFKSFE3hAuU5XJCGDGCMNk21O5Q2Vy1ADFuC6wVI29KbJCJLcSzTreUfYRIv5cqG4%2FOeDEhlcZLVEkRoo4is2cCaYIQIr2XbCUyZ7aRdbqNsCoxfnza7rzfz%2BeVXLbtyND7Z%2FClDqiNgmJN%2FnnqX3udfdrfz79kmjrXcjzQvEEP0e5Cuhb3EWclOGhBG1J6iiTBZohjlIJ3V0gCjdR5BtoxOW7XOJUIFFRpU%2BAMSshOXA6wJoqIlyVLRy9dkCz3w2SMHFnortMYL%2BJdTynsHcAzJX%2FSsyqsUDRBlkOAdHYdhCkhy39wcEPcyrvRq29OKMP8TXGG0XUHt6U9ZGegDaijPlXVaBmU5a7mrdgaz7GaZEHhdgNI8GwrwLsPfQ0zg9h9M3zaVmMX0x3weQRoSQpsagYaULRX0OfpLGXfcx72G24R8Y8Pf26J1q%2FRMt2LmsrGTjZyeVxnEmrdqXz2sbMlxL40h60AM%2BX1iyOrGUFkGvLTLclyWXokqKTc5sOZSjXbpciCtW2U5k2qGFNL6RUPN1Idg1Lpu9OtRsCp1CEhTmKIYg4z6rYA4oYeH%2BGHfVd3xGIzvki2Un94XhbXtNGBtdOHad06Ja%2BeM6%2BNwbR%2BIa7dPXNsdYYqTEgYfDBvud36tWTwW3KGcaHcgS1JqyAsGWtMBWVEa1LLG3MUhBkm%2BYrEeylFLoRw0Eb2rEnzV9LQWi99yG7Q779xHCBY%2F4%2FLCaQuUIsw3g%2BNwaNp2tcKD%2Bqi9EGAXUUM4Gr4D72g%2F5R%2BxNDUoX725IyoubSOle8MEvc8wQW%2FwiaW7fccJ7plPjuMT90A%2BMfZcjdMQivvmCSWks4avnlD83hMP%2B0woxxGKfyCh2H3yif8MiYepCGcy%2FXhi4hG%2B0sTDaeK6el1Uce2NT4nrjpcz5vEL6T5aTpVMsp2n%2FCcPNU3DOm7vhOmdCfPI185DnzsNs0%2FKNPY8eHI2CxTmnAnmbDzQcKGr0Kkj67T02Y7lAHqj9PBN8OLY6%2BLFk8LXP8P3SPiah8JX774bJ4KvuTeFYqnSi%2BYuh%2FGE%2BikOFJ5wlc%2ByocRcchKZtuXhqlDynxDXy%2FORFdtMWpsIlLopNzRR4kBHRoMictsf2lX%2F%2BEwqMhs%2BmiWeKFsF4WoItHCkGaNHskfFerUivyh7EsrXwc9Wg5%2FtrvDKfZ64lTbr%2F6LLPuUPfWv2Bw%3D%3D
+
+'''
+Пользователь вводит две буквы. Определить, на каких местах алфавита они стоят и сколько между ними находится букв.
+'''
+
+a = ord(input('Введите первую букву: '))
+b = ord(input('Введите вторую букву: '))
+a = a - ord('a') + 1
+b = b - ord('a') + 1
+print(f'Позиции: {a} и {b}')
+print(f'Между буквами {abs(a - b) - 1} символ(ов)')
+
