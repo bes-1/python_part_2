@@ -1,0 +1,16 @@
+""""
+link to blocks: https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=dz_2.drawio#R7VrbkuI2EP0aHmfLlq88goFNVSaVrZ2qJPu0JbAWnBhECbHAfn1kS7JbtvFwWfAkw4tKat1bOqe7ZfecaLn%2FyPB68RuNSdpDVrzvOaMeQqEfijQTHKTADZEUzFkSS5FdCl6SH0QJLSXdJjHZGA05pSlP1qZwRlcrMuOGDDNGd2azbzQ1Z13jOakJXmY4rUv%2FTGK%2BUNtCQSn%2FhSTzhZ7Z9vuyZol1Y7WTzQLHdAdEzrjnRIxSLnPLfUTSTHdaL5tpRL9Gn3%2F94%2FmzvSXPv28HwdcnOdjknC7FFhhZ8Z88tK%2F2xg9aYSQW%2BlNFyviCzukKp%2BNSOmR0u4pJNqwlSmWbZ0rXQmgL4d%2BE84O6DHjLqRAt%2BDJVtWSf8L%2By7h88VfoCakZ7NXJeOOjCirMD6JQVv8C6slte0v3k%2FrJNVe7DK8pU7TZ0y2akpZ1CA8dsTtrGc4obI5BG6JKIRYp%2BjKSYJ9%2FNxWF15%2BdFu%2FJcRUYd7RnHrBb5HadbNVNPKKc%2FytKh1ROqDwOdF%2BkwT8e1q1EefHZWu0XCycsa5%2BrZCfIwD1lNSRgn%2BwtUX1eVGsXRzKIJSRV3JbptDdkFQLZv3Ui5tvfA0HUYck7EkNslhpxmDOXpECnEZKlYpYTRAAglpEIANS%2FP23kKBxHX1E%2BFFoZTJnLzLJe3GYFxvDyNQH4Exhmr0ZBEtkwnam1qisqFFbZtnWXFkeI0JSmdM7wUM68JS4T6CKvWfSorXiOCb8meaMfglsSAQs8gBttrYIbgrszgPpjhOmZwT2QGr0tmcJuZIdTALIDv63zF0kpJAKyxD3pNNJ9MAG9Yx3mgSCUP9J8A0UDqQUASKsJCkZ6sxTcQkqg2jac7Bke6e6Y6ii7HGCq6dNuWqTUXLHuiZ4Sjwf22LFIq0AFTR7lk2OImWd25Scg32bBgOcCGRZB2Hzasm507sqENuLBkxv8WG3onsqHfJRva%2FU6N3js6Zjvs8py9ZqtXuLXAul1H5GfZL%2BuIZyy5GlL6NQ66dXuPnC3ocrrddGhAPNOAOE0GxGkwILZzMwti19T08KfPohb%2FRGoJumQW%2F2iknbtbJRIr8faJnif0A0%2BHsHUOeP8P4bTbN9%2FZPKvzhzb0gP918A9OhH%2BnjkXQDH8XQN4GgRuqQbgevl1ADoW9PtdxkUGiSMcghnUAXRQR5bEgNATujW3yVWMQ2uw%2FvIUg1K08yXn9zjnEeXDIdRwSnsgh%2FS45JGzkkIHTBNtKdGAC%2FN6vYReESeqZD7LWEww1isXqhb9NqnDRB5Ms%2FLDpxcq7I1mgdrIg6ZTuOn%2BsujXer8Wx6vqJJmI55VfcwPQunWrQKPlF9SrPccAYPoBm66zB5vg8ftWLDazKtZAjlpek2OPl96bfxj4IwLj%2B6BAaDw0NTHShL3LBI4omLWTVw%2B63QRmVsw0aCOPO3kWr71pnXqEQbuoKp8l8JfIzoZg8GszUlsxwOlAVyySOJdmQTfIDT%2FOhskNQSBDjesOeN8rGEvyyKQPFDWf0HxLRlGbh54quyE3PxiRztyF6bHo8Qjfj8sfb0ZWGwD7V8wN%2Fx3Xx%2FaHZ93vl%2Baj9A9%2BxfzLey1tQwaIVK9od0%2BrJqqcMn%2FRHwM7V%2F3N8kz%2Bz9Z3OFYuaFTsynIb3Y8hQ7XfD%2Bgm5P8eQiWL5N7H0Rctfsp3xvw%3D%3D
+
+Найти сумму n элементов следующего ряда чисел: 1 -0.5 0.25 -0.125 ...
+Количество элементов (n) вводится с клавиатуры.
+"""
+n = int(input('Введите количество элементов ряда: '))
+i = 0
+start_num = 1
+total = 0
+while i < n:
+    print(f'{i + 1} элемент: {start_num}')
+    total += start_num
+    start_num /= -2
+    i += 1
+print(f'Сумма элементов ряда: {total}')

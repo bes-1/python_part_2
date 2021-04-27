@@ -1,0 +1,13 @@
+""""
+link to blocks:https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=dz_2.drawio#R7Vptb9sgEP41VrdJnYzf4nyMk3ZT1amT%2BmHrRxJTm8U2FiaN018%2FsHHwS5KmTTO3XaQKwXGAubvneCDVzHGcf6MwDX8QH0Waofu5Zk40w3Adl5dCsCoFlmuUgoBivxQBJbjFj0gKdSldYB9lDUVGSMRw2hTOSJKgGWvIIKVk2VS7J1Fz1RQGqCO4ncGoK%2F2FfRbKbRkDJf%2BOcBBWKwNnWPbEsFKWO8lC6JNlTWReaOaYEsLKWpyPUSRsV9nFo%2B75VRKY%2BPrqxh6dh%2FgmJ%2BflZJfPGbLeAkUJe92p5V4ztqrshXxuPtkklIUkIAmMLpTUo2SR%2BEjMqvOW0rkmJOVCwIV%2FEGMrGQtwwQgXhSyOZC%2FKMfsthn%2B1Zeuu1jPJ5cxFY1U1EkZXtUGieVfvU8OKVjWu3J%2FYVCscnrCl1MvIgs7QDj0JBgZpgHbNZ68DhgMNkRjxj%2BTjKIogww%2FNj4My5IO1nnIrr0jPPsPL8iMfYLSQK2ncOMOJKD1d46Z3B1Wdl15RXnRCQzle%2BGoZYoZuU1iYZ8lzR9PJcklEGcpfYPquqeQsZgVHmY9M2VwqcINKJawB29GPZFxgnDB0GIbMPTFk9YkhcyOGvFFho%2B1I0d8OUgy9b6gM%2BkQKqOFEoeZ9IcXaEylOr6cN6NPN%2Bn%2FkZuD26WdrM6uwCz4BakyCf6WeLGLNcGAscl%2FA98SpRtVMplm6Nmo9iYYkni6yHhOoabeoRjeBDjfkz%2BHRqEb3pDlRjWchy94TWWafwLI3A6skHGVpF6Ul4SUAV8mNks87NbWKzzcUBrWxoEn79U8crZ87ocbvv6mocmfAKEIRCSiMuc9SRDHfOKLtvp%2Bq4ykI3%2BMcVY8H%2F5ITAdA3JwLmCdOHYdrZE9O9HpZOB9NzgURR0%2BdfRBR6xRFpb8jxb%2BI2YVmte%2Fewd%2BTsvk6gaEqWvd8kjh38hwa1HPqTYP45Kk26rauj23JiCTY5SvlxRClc1dRSoZBtX8dppWNL11thUc6ogmS9x5fHjduBYoE8Ccaifsn%2F3gsQrd6BaJxewA5EMXD3PMPAsM9DDHShUzFTziK9Jj8teeWamYpL4Nn87EOyStBKl2uI9nc2Djd7alS7CkxqnnJ25Lo39Njv9E7XjS2vHpb8%2FaRtRm4Q1rQVjHCQ8PqMG6YIYmE2PIPRSHbE2PfLFIky%2FAinxVQiC8nTlM9re5o9EXPxrJip%2BM4YJXM0JhERqElIgo55DrVfR4yub8wNrjGO5pot9%2BZ6nHdPqo%2FrIGOgP%2Bkg63UcxJvqd%2FCSp6l%2FJjAv%2FgI%3D
+
+Сформировать из введенного числа обратное по порядку входящих в него цифр и вывести на экран.
+Например, если введено число 3486, то надо вывести число 6843
+"""
+num = int(input('Введите целое число: '))
+k = 0
+while num > 0:
+    k = k * 10 + num % 10
+    num = num // 10
+print(f'Число наоборот: {k}')
+
